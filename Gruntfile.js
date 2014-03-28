@@ -17,7 +17,17 @@ module.exports = function (grunt) {
                 unused: true,
                 boss: true,
                 eqnull: true,
-                globals: {}
+                globals: {
+                  "angular"    : false,
+                  "describe"   : false,
+                  "it"         : false,
+                  "before"     : false,
+                  "beforeEach" : false,
+                  "after"      : false,
+                  "afterEach"  : false,
+                  "inject"  : false,
+                  "expect"  : false
+                }
             },
             gruntfile: {
                 src: 'Gruntfile.js'
