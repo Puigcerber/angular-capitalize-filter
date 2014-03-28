@@ -20,14 +20,16 @@ module.exports = function (grunt) {
                 globals: {}
             },
             gruntfile: {
-                src: 'gruntfile.js'
+                src: 'Gruntfile.js'
             },
             lib_test: {
                 src: ['lib/**/*.js', 'test/**/*.js']
             }
         },
-        nodeunit: {
-            files: ['test/**/*_test.js']
+        karma: {
+          unit: {
+            configFile: 'karma.conf.js'
+          }
         },
         watch: {
             gruntfile: {
@@ -36,16 +38,16 @@ module.exports = function (grunt) {
             },
             lib_test: {
                 files: '<%= jshint.lib_test.src %>',
-                tasks: ['jshint:lib_test', 'nodeunit']
+                tasks: ['jshint:lib_test', 'karma']
             }
         }
     });
 
     // These plugins provide necessary tasks
-    grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-karma');
 
     // Default task
-    grunt.registerTask('default', ['jshint', 'nodeunit']);
+    grunt.registerTask('default', ['jshint', 'karma']);
 };

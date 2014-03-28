@@ -3,7 +3,7 @@
 describe('Filter: capitalize', function () {
 
   // load the filter's module
-  beforeEach(module('webApp'));
+  beforeEach(module('customFilters'));
 
   // initialize a new instance of the filter before each test
   var capitalize;
