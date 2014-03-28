@@ -1,10 +1,10 @@
 {
-  "name": "angularjs-capitalize-filter",
+  "name": "angular-capitalize-filter",
   "version": "0.0.1",
-  "homepage": "https://github.com/Puigcerber/angularjs-capitalize-filter",
+  "homepage": "https://github.com/Puigcerber/angular-capitalize-filter",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Puigcerber/angularjs-capitalize-filter.git"
+    "url": "git@github.com:Puigcerber/angular-capitalize-filter.git"
   },
   "authors": [
     "Pablo Villoslada Puigcerber <pablo85@gmail.com> (http://puigcerber.wordpress.com/)"
