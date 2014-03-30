@@ -13,7 +13,7 @@ $ bower install angular-capitalize-filter
 Then you have to include it in your HTML:
 
 ```html
-<script src="bower_components/angular-capitalize-filter/lib/capitalize.js"></script>
+<script src="bower_components/angular-capitalize-filter/capitalize.js"></script>
 ```
 
 And inject the module `customFilters` in your application:

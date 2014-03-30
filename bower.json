@@ -10,7 +10,7 @@
     "Pablo Villoslada Puigcerber <pablo85@gmail.com> (http://puigcerber.wordpress.com/)"
   ],
   "description": "AngularJS filter to capitalize sentences and specially team names.",
-  "main": "lib/capitalize.js",
+  "main": "capitalize.js",
   "keywords": [
     "angularjs",
     "capitalize",
@@ -21,7 +21,11 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test"
+    "test",
+    "lib",
+    "Gruntfile.js",
+    "karma.conf.js",
+    "**/*.json"
   ],
   "dependencies": {
     "angular": "~1.2.15"
