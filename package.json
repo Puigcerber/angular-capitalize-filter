@@ -2,8 +2,8 @@
   "name": "angular-capitalize-filter",
   "version": "1.1.0",
   "repository": {
-      "type": "git",
-      "url": "http://github.com/Puigcerber/angular-capitalize-filter"
+    "type": "git",
+    "url": "http://github.com/Puigcerber/angular-capitalize-filter"
   },
   "dependencies": {},
   "devDependencies": {
@@ -15,6 +15,7 @@
     "grunt-karma": "~0.8.2",
     "karma-jasmine": "~0.1.5",
     "karma-phantomjs-launcher": "~0.1.2",
-    "grunt-contrib-copy": "~0.5.0"
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-uglify": "~0.4.0"
   }
 }
