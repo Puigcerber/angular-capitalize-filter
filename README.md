@@ -27,5 +27,28 @@ angular.module('webApp', ['customFilters']);
 You can use it like any other AngularJS filter:
 
 ```html
-<p>{{ teamName | capitalize }}</p>
+<p>{{ input | capitalize }}</p>
 ```
+
+Available formats:
+
+* [all](#all)
+* [team](#team)
+
+### All
+
+It capitalizes all the words of a given sentence. As it's the default format you can omit the parameter.
+
+```html
+<p>{{ sentence | capitalize:'all' }}</p>
+```
+
+### Team
+
+Specially adapted for team names, with uppercase abbreviation.
+
+```html
+<p>{{ teamName | capitalize:'team' }}</p>
+```
+
+It formats the team name as CD Logroñés, FC Barcelona or Valencia CF.
