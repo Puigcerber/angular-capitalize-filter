@@ -35,4 +35,16 @@ describe('Filter: capitalize', function () {
     });
   });
 
+  describe('Format: first', function() {
+    it('should return the uppercase input with the first word capitalized', function () {
+      var text = 'LIFE IS TOO SHORT FOR MANUAL TESTING.';
+      expect(capitalize(text, 'first')).toBe('Life is too short for manual testing.');
+    });
+
+    it('should return the lowercase input with the first word capitalized', function () {
+      var text = 'a code that cannot be tested is flawed.';
+      expect(capitalize(text, 'first')).toBe('A code that cannot be tested is flawed.');
+    });
+  });
+
 });
