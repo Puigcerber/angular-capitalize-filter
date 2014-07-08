@@ -16,10 +16,10 @@ Then you have to include it in your HTML:
 <script src="bower_components/angular-capitalize-filter/capitalize.js"></script>
 ```
 
-And inject the module `customFilters` in your application:
+And inject the module `angular-capitalize-filter` as a dependency in your application:
 
 ```js
-angular.module('webApp', ['customFilters']);
+angular.module('webApp', ['angular-capitalize-filter']);
 ```
 
 ## Usage

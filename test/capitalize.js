@@ -3,7 +3,7 @@
 describe('Filter: capitalize', function () {
 
   // load the filter's module
-  beforeEach(module('customFilters'));
+  beforeEach(module('angular-capitalize-filter'));
 
   // initialize a new instance of the filter before each test
   var capitalize;
