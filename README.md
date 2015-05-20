@@ -10,10 +10,17 @@ You can install the filter using [Bower](http://bower.io/):
 $ bower install angular-capitalize-filter
 ```
 
+Or [npm](https://www.npmjs.com/):
+
+```bash
+$ npm install angular-capitalize-filter
+```
+
 Then you have to include it in your HTML:
 
 ```html
 <script src="bower_components/angular-capitalize-filter/capitalize.js"></script>
+<script src="node_modules/angular-capitalize-filter/capitalize.js"></script>
 ```
 
 And inject the module `angular-capitalize-filter` as a dependency in your application:
