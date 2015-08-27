@@ -14,16 +14,17 @@
  */
 angular.module('angular-capitalize-filter',[])
   .filter('capitalize', function () {
-    return function (input, format) {
+    return function (input, format, wordDelim) {
       if (!input) {
         return input;
       }
       format = format || 'all';
+      wordDelim = wordDelim || ' ';
       if (format === 'first') {
         // Capitalize the first letter of a sentence
         return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
       } else {
-        var words = input.split(' ');
+        var words = input.split(wordDelim);
         var result = [];
         words.forEach(function(word) {
           if (word.length === 2 && format === 'team') {
