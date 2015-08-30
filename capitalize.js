@@ -10,20 +10,23 @@
  * @param {string} input The string to be formatted.
  * @param {string} [format] The format to be applied being the options 'all', 'first' or 'team'.
  * If not specified, 'all' is used.
+ * @param {string} [separator] The character(s) to be used for separating the string.
+ * If not specified, space is used.
  * @returns {string} Formatted string.
  */
 angular.module('angular-capitalize-filter',[])
   .filter('capitalize', function () {
-    return function (input, format) {
+    return function (input, format, separator) {
       if (!input) {
         return input;
       }
       format = format || 'all';
+      separator = separator || ' ';
       if (format === 'first') {
         // Capitalize the first letter of a sentence
         return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
       } else {
-        var words = input.split(' ');
+        var words = input.split(separator);
         var result = [];
         words.forEach(function(word) {
           if (word.length === 2 && format === 'team') {
@@ -33,7 +36,7 @@ angular.module('angular-capitalize-filter',[])
             result.push(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
           }
         });
-        return result.join(' ');
+        return result.join(separator);
       }
     };
   });
