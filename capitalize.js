@@ -36,7 +36,7 @@ angular.module('angular-capitalize-filter',[])
             result.push(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
           }
         });
-        return result.join(separator);
+        return result.join(' ');
       }
     };
   });
