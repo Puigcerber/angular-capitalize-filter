@@ -24,19 +24,21 @@ angular.module('angular-capitalize-filter',[])
       separator = separator || ' ';
       if (format === 'first') {
         // Capitalize the first letter of a sentence
-        return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
+        var output = input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
+        if (separator === ' ') {
+          return output;
+        } else {
+          return output.split(separator).join(' ');
+        }
       } else {
-        var words = input.split(separator);
-        var result = [];
-        words.forEach(function(word) {
+        return input.split(separator).map(function(word) {
           if (word.length === 2 && format === 'team') {
             // Uppercase team abbreviations like FC, CD, SD
-            result.push(word.toUpperCase());
+            return word.toUpperCase();
           } else {
-            result.push(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+            return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
           }
-        });
-        return result.join(separator);
+        }).join(' ');
       }
     };
   });

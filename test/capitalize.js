@@ -48,10 +48,10 @@ describe('Filter: capitalize', function () {
   });
 
   describe('Separator', function () {
-    it('should return the underscored sentence with the desired capitalization', function() {
+    it('should return the underscored sentence humanized with the desired capitalization', function() {
       var text = 'COPY_and_PASTE_is_a_design_ERROR';
-      expect(capitalize(text, 'all', '_')).toBe('Copy_And_Paste_Is_A_Design_Error');
-      expect(capitalize(text, 'first', '_')).toBe('Copy_and_paste_is_a_design_error');
+      expect(capitalize(text, 'all', '_')).toBe('Copy And Paste Is A Design Error');
+      expect(capitalize(text, 'first', '_')).toBe('Copy and paste is a design error');
     });
   });
 

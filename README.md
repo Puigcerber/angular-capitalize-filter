@@ -75,8 +75,8 @@ It formats the team name as CD Logroñés, FC Barcelona or Valencia CF.
 
 ### Separator
 
-By default the words are separated by the space character. 
-But any other character can be specified as a separator.
+By default the words in a sentence are separated by the space character. 
+But any other character can be specified as a separator so we can humanize our output.
 
 ```html
 <p>{{ underscored_sentence | capitalize:'all':'_' }}</p>
