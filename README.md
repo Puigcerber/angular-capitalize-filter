@@ -23,10 +23,10 @@ Then you have to include it in your HTML:
 <script src="node_modules/angular-capitalize-filter/capitalize.js"></script>
 ```
 
-And inject the module `angular-capitalize-filter` as a dependency in your application:
+And inject the module `puigcerber.capitalize` as a dependency in your application:
 
 ```js
-angular.module('webApp', ['angular-capitalize-filter']);
+angular.module('webApp', ['puigcerber.capitalize']);
 ```
 
 ## Usage
@@ -82,11 +82,13 @@ But any other character can be specified as a separator so we can humanize our o
 <p>{{ underscored_sentence | capitalize:'all':'_' }}</p>
 ```
 
-## Testing
+## Related
 
-To run the tests:
+* [camelize](https://github.com/Puigcerber/angular-camelize-filter): 
+AngularJS filter to convert strings to lower camel case replacing non-alphanumeric characters.
+* [lowerize](https://github.com/Puigcerber/angular-lowerize-filter): 
+AngularJS filter to convert strings to lower case replacing non-alphanumeric characters.
 
-```bash
-$ npm install && bower install
-$ grunt test
-```
+## License
+
+MIT © [Pablo Villoslada Puigcerber](http://pablovilloslada.com)

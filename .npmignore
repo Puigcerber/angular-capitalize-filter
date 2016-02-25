@@ -1,0 +1,7 @@
+bower_components/
+test/
+.editorconfig
+.jshintrc
+.npmignore
+bower.json
+karma.conf.js

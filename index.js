@@ -1,3 +1,3 @@
 require('angular');
 require('./capitalize');
-module.exports = 'angular-capitalize-filter';
+module.exports = 'puigcerber.capitalize';

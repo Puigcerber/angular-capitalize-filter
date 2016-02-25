@@ -14,7 +14,7 @@
  * If not specified, space is used.
  * @returns {string} Formatted string.
  */
-angular.module('angular-capitalize-filter',[])
+angular.module('puigcerber.capitalize',[])
   .filter('capitalize', function () {
     return function (input, format, separator) {
       if (!input) {

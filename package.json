@@ -1,9 +1,15 @@
 {
   "name": "angular-capitalize-filter",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "AngularJS filter to capitalize sentences and specially team names.",
-  "author": "Pablo Villoslada Puigcerber <pablo85@gmail.com>",
+  "author": "Pablo Villoslada Puigcerber <pablo85@gmail.com> (http://pablovilloslada.com/)",
   "main": "index.js",
+  "scripts": {
+    "build": "uglifyjs capitalize.js -m -o capitalize.min.js",
+    "lint": "jshint capitalize.js test; true",
+    "test": "karma start",
+    "pretest": "npm run lint"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Puigcerber/angular-capitalize-filter"
@@ -21,15 +27,14 @@
     "angular": "^1.2.15"
   },
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-contrib-nodeunit": "",
+    "angular-mocks": "^1.5.0",
+    "jshint": "^2.9.1",
     "karma": "~0.12.1",
-    "grunt-karma": "~0.8.2",
+    "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "~0.1.5",
-    "karma-phantomjs-launcher": "~0.1.2",
-    "grunt-contrib-uglify": "~0.4.0"
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.4",
+    "uglify-js": "^2.6.2"
   },
-  "license": "GPL-2.0"
+  "license": "MIT"
 }
