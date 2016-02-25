@@ -1,8 +1,8 @@
 {
   "name": "angular-capitalize-filter",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "AngularJS filter to capitalize sentences and specially team names.",
-  "author": "Pablo Villoslada Puigcerber <pablo85@gmail.com>",
+  "author": "Pablo Villoslada Puigcerber <pablo85@gmail.com> (http://pablovilloslada.com/)",
   "main": "index.js",
   "scripts": {
     "build": "uglifyjs capitalize.js -m -o capitalize.min.js",

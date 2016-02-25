@@ -1,13 +1,13 @@
 {
   "name": "angular-capitalize-filter",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "homepage": "https://github.com/Puigcerber/angular-capitalize-filter",
   "repository": {
     "type": "git",
     "url": "git@github.com:Puigcerber/angular-capitalize-filter.git"
   },
   "authors": [
-    "Pablo Villoslada Puigcerber <pablo85@gmail.com> (http://www.pablovilloslada.com/)"
+    "Pablo Villoslada Puigcerber <pablo85@gmail.com> (http://pablovilloslada.com/)"
   ],
   "description": "AngularJS filter to capitalize sentences and specially team names.",
   "main": "capitalize.js",
